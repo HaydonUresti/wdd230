@@ -1,0 +1,126 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #545E75;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    color: #A7CCED;
+}
+
+.header-image {
+    grid-column: 2;
+    margin-left: 50%;
+    margin-top: 28px;
+}
+
+.header-name {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+nav {
+    display: flex;
+    background-color: #63ADF2;
+    height: 10%;
+    /* color: white; */
+    flex-direction: column;
+    margin: 0;
+    height: 240px;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+
+}
+
+nav a {
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+
+}
+
+main {
+    background-color: rgb(253, 253, 253);
+    margin: 0;
+    max-width: 80%;
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 1fr;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+
+.main-header {
+    border-bottom: 1px solid #82A0BC;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    /* font-weight: 300; */
+
+}
+
+
+.card {
+    margin: 1em;
+    border: 1px solid #82A0BC;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+
+}
+
+
+.info-div {
+    text-align: center;
+
+}
+
+.info-div div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card h3 {
+
+    background-color: #A7CCED;
+    margin: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer {
+    background-color: #304D6D;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    padding: 0;
+    color: #82A0BC;
+}
