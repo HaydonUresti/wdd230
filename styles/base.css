@@ -40,7 +40,6 @@ nav {
     font-size: 1.5em;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
-
 }
 
 nav a {
@@ -49,7 +48,6 @@ nav a {
     margin-bottom: 5px;
     text-align: center;
     color: black;
-
 }
 
 main {
@@ -60,6 +58,7 @@ main {
     grid-template-columns: 1fr;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
+    min-height: 100vh -;
 }
 
 .main-header {
@@ -116,4 +115,9 @@ footer {
     font-weight: 300;
     padding: 0;
     color: #82A0BC;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 5;
 }
