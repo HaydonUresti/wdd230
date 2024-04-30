@@ -49,3 +49,13 @@ footer {
     font-size: smaller;
     text-align: left;
 }
+
+section {
+    text-align: center;
+    /* margin-left: ; */
+}
+
+section ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
