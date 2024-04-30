@@ -35,7 +35,6 @@ nav {
     height: 10%;
     flex-direction: column;
     margin: 0;
-    height: 240px;
     width: 100%;
     font-size: 1.5em;
     font-family: "Kanit", sans-serif;
@@ -51,7 +50,6 @@ nav a {
     text-decoration: none;
     margin-top: 5px;
     margin-bottom: 5px;
-
     color: black;
 }
 
