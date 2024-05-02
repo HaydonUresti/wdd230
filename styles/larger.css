@@ -1,0 +1,17 @@
+@media screen and (min-width:800px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    footer {
+        position: fixed;
+    }
+}

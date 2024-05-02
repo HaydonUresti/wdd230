@@ -116,9 +116,10 @@ footer {
     font-weight: 300;
     padding: 0;
     color: #82A0BC;
+    bottom: 0;
 }
 
 footer p {
-    margin-bottom: 0;
-    padding-bottom: 5;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
