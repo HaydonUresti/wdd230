@@ -127,6 +127,14 @@ ul {
     align-items: center;
 }
 
+#map-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 1rem;
+}
+
 
 footer {
     background-color: #304D6D;

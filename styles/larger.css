@@ -19,7 +19,4 @@
         grid-template-columns: 2fr 1fr;
     }
 
-    footer {
-        position: fixed;
-    }
 }
