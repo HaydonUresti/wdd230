@@ -116,6 +116,14 @@ ul {
     list-style-type: none;
 }
 
+section ul li a {
+    color: #545E75;
+}
+
+section ul li a:hover {
+    color: #63ADF2;
+}
+
 .card h3 {
     background-color: #A7CCED;
     margin: 0;
