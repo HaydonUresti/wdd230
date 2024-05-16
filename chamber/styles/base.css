@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Play", sans-serif;
+}
+
+header {
+    background-color: #828E9B;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+#logo-div {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+#menu-button::before {
+    content: "☰";
+}
+
+#menu-button {
+    background-color: inherit;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+#button-div {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 1rem;
+    grid-row: 2;
+    margin-right: 3rem;
+}
+
+#menu-button.open::before {
+    content: "X";
+}
+
+
+nav ul {
+    text-align: center;
+    display: none;
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+#header-nav ul li a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* Visited must be above hover so that hover takes precidence */
+#header-nav ul li a:visited {
+    color: black;
+}
+
+#header-nav ul li a:hover {
+    color: white;
+}
+
+
+main {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-image-section {
+    width: 100%;
+    height: 35vh;
+    background-image: url("https://media.cntraveler.com/photos/5727696bb161ad8b31235293/16:9/w_2560%2Cc_limit/GettyImages-143687829-tunisia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #db995a;
+    margin: 1em;
+    border: 1px solid #82A0BC;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.card h2 {
+    width: 90%;
+    border-bottom: 1px solid black;
+
+}
+
+footer {
+    background-color: #828E9B;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    padding: 0;
+    bottom: 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
