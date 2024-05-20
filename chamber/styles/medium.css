@@ -1,0 +1,32 @@
+@media screen and (min-width: 769px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul.open {
+        flex-direction: row;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+
+    #spotlights-section {
+        text-align: center;
+    }
+
+    #spotlight-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #spotlight-div .card h4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+}

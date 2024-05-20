@@ -11,8 +11,9 @@
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2019/06/greetings-from-tatooine-rv.jpg">
-    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/">
+    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/chamber/index.html">
     <link rel="icon" href="images/tatooine-favicon.ico">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css" type="text/css" crossorigin="anonymous">
@@ -44,34 +45,67 @@
 
     </header>
     <main>
-        <section id="hero-image-section">
-            <h2>This is the hero image section</h2>
-        </section>
-        <section class="card" id="call-to-action-section">
-            <h2>This is the call to action section</h2>
-            <hr>
-            <p>Information</p>
-        </section>
-        <section class="card" id="current-events-section">
-            <h2>
-                This is the weather card
-            </h2>
-            <hr>
-            <p>Information</p>
 
-        </section>
-        <section id="weather-section">
-            <h2>This is the current events section</h2>
+        <section id="call-to-action-section">
+            <h2>This is the call to action section</h2>
+            <button id="call-to-action-button">Button</button>
+
+            <img src="images/tatooine-tunisia.webp" alt="hero image" height="500" width="800">
             <p>Information</p>
         </section>
+        <div id="weather-events-div">
+            <section class="card" id="current-events-section">
+                <h2>This is the current events section</h2>
+
+
+                <p>Information</p>
+
+            </section>
+            <section class="card" id="weather-section">
+
+                <h2>
+                    This is the weather card
+                </h2>
+
+                <p>Information</p>
+                <p>current conditions: HOT!</p>
+                <p>Temperature: 126&deg;F</p>
+            </section>
+        </div>
         <section id="spotlights-section">
             <h2>Company spotlights ads</h2>
-            <p>Information</p>
+            <div id="spotlight-div">
+                <div class="card" id="spotlight1">
+                    <h4>This is spotlight 1!</h4>
+                </div>
+                <div class="card" id="spotlight2">
+                    <h4>This is spotlight 2!</h4>
+                </div>
+                <div class="card" id="spotlight3">
+                    <h4>This is spotlight 3!</h4>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Haydon Uresti <br> A WDD 230 project</p>
-        <p id="lastModified">Last Modified</p>
+        <div id="footer-logo-div">
+            <img src="images/tatooine-chamber-of-commerce.png" alt="logo image" width="200px" height="200px">
+            <div id="company-info-div">
+                <p>Tatooine Chamger of Commerce</p>
+                <p>123 Bantha Rd. </p>
+                <p>Mos Eisley, Tatooine</p>
+            </div>
+        </div>
+        <div>
+            <p>Holo Mail Address: info@email.org</p>
+            <p>Holo Number123-345-6789</p>
+            <p>Map</p>
+        </div>
+        <hr>
+        <div id="site-info-div">
+            <p>©<span id="currentYear"></span> <br> Haydon Uresti</p>
+            <p id="lastModified">Last Modified</p>
+        </div>
     </footer>
 </body>
 
