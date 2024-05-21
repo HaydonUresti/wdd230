@@ -100,9 +100,26 @@ main {
     overflow: hidden;
 }
 
+#call-to-action-section {
+    position: relative;
+}
+
 #hero-image-section img {
     object-fit: fill;
+
 }
+
+/* #hero-image {
+    max-width: 100%;
+} */
+
+#hero-button {
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+}
+
+#hero-image {}
 
 .card {
     width: 100%;
