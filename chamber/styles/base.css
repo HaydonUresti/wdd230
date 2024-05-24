@@ -33,6 +33,11 @@ header {
     background-color: var(--header-color);
     display: grid;
     grid-template-rows: 1fr auto;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: -120px;
 }
 
 #theme-button {
