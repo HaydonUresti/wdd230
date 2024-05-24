@@ -1,18 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+
+:root {
+    /* Colors for light mode */
+    /* --text-color: black;
+    --body-color: white;
+    --card-color: #db995a;
+    --border-color: #82A0BC;
+    --header-color: #828E9B;
+    --link-highlight-color: azure; */
+    /* For dark mode */
+    --text-color: white;
+    --body-color: black;
+    --card-color: #9e6a3a;
+    --border-color: #526476;
+    --header-color: #4c5a69;
+    --link-highlight-color: black;
+}
+
+
 html,
 body {
     margin: 0;
     padding: 0;
     font-family: "Play", sans-serif;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    background-color: var(--body-color);
 }
 
 header {
-    background-color: #828E9B;
+    background-color: var(--header-color);
     display: grid;
     grid-template-rows: 1fr auto;
+}
+
+#theme-button {
+    background-color: var(--header-color);
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#theme-button::before {
+    content: "🌙";
+}
+
+
+#theme-button.dark::before {
+    content: "☀️";
 }
 
 #logo-div {
@@ -65,24 +102,27 @@ nav ul li {
     margin: 10px;
 }
 
+nav li:hover {
+    background-color: var(--link-highlight-color);
+}
+
 #header-nav ul li a:link {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 /* Visited must be above hover so that hover takes precidence */
 #header-nav ul li a:visited {
-    color: black;
+    color: var(--text-color);
 }
 
 #header-nav ul li a:hover {
-    color: white;
+    opacity: .7;
+
 }
 
 
 main {
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,28 +130,40 @@ main {
 }
 
 #hero-image-section {
-    width: 100%;
-    height: 35vh;
-    /* background-image: url("https://media.cntraveler.com/photos/5727696bb161ad8b31235293/16:9/w_2560%2Cc_limit/GettyImages-143687829-tunisia.jpg"); */
+    max-width: 100%;
+    max-height: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     overflow: hidden;
+
 }
 
 #call-to-action-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     position: relative;
+
+
 }
 
 #hero-image-section img {
-    object-fit: fill;
+    margin: 1rem;
+
 
 }
 
-/* #hero-image {
+#hero-image {
     max-width: 100%;
-} */
+    height: auto;
+    max-width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
 
 #hero-button {
     position: absolute;
@@ -119,15 +171,14 @@ main {
     bottom: 100px;
 }
 
-#hero-image {}
 
 .card {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #db995a;
+    background-color: var(--card-color);
     margin: 1em;
-    border: 1px solid #82A0BC;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -138,15 +189,15 @@ main {
 
 .card h2 {
     width: 90%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text-color);
 
 }
 
 footer {
     display: flex;
     flex-direction: column;
-
-    background-color: #828E9B;
+    color: var(--text-color);
+    background-color: var(--header-color);
     margin: 0;
     text-align: center;
     width: 100%;
@@ -156,14 +207,8 @@ footer {
     position: relative;
 }
 
-/* footer p {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-} */
 
 #footer-logo-div {
-    /* display: grid;
-    grid-template-columns: 3; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +218,13 @@ footer {
 footer hr {
     width: 100%;
     border-width: 1px;
-    border-color: black;
+    border-color: var(--text-color);
+
+    /* color: red;
+    background-color: red; */
+    /* border-color: red; */
+    border-bottom: var(--text-color);
+
 
 }
 
