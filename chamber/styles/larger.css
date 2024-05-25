@@ -22,6 +22,10 @@
 
     }
 
+    /* #call-to-action-section {
+        margin-top: 0;
+    } */
+
     #weather-events-div {
         grid-row: 2;
         display: grid;
@@ -38,6 +42,10 @@
         margin-right: 2rem;
     }
 
+    #spotlight3 {
+        margin-bottom: 0;
+    }
+
     #weather-section {
         grid-column: 3/4;
 
@@ -47,7 +55,13 @@
         grid-row: 3;
     }
 
+    #spotlight-div {
+        gap: 2rem;
+        margin-top: 0;
 
-    
+    }
+
+
+
 
 }

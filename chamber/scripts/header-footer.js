@@ -18,20 +18,20 @@ let darkbutton = document.getElementById("theme-button");
 darkbutton.addEventListener("click", () => {
     darkbutton.classList.toggle("dark")
     if (darkbutton.classList.contains("dark")) {
-        document.documentElement.style.setProperty('--text-color', 'white');
-        // document.documentElement.style.setProperty('--inv-text-color', 'black');
-        document.documentElement.style.setProperty('--body-color', '#1f1f1d');
-        document.documentElement.style.setProperty('--card-color', '#588157');
-        document.documentElement.style.setProperty('--header-color', '#3A5A40');
-        document.documentElement.style.setProperty('--nav-color', '#1e2f21');
+        document.documentElement.style.setProperty('--text-color', 'black');
+        document.documentElement.style.setProperty('--body-color', 'white');
+        document.documentElement.style.setProperty('--card-color', '#db995a');
+        document.documentElement.style.setProperty('--border-color', '#82A0BC');
+        document.documentElement.style.setProperty('--header-color', '#828E9B');
+        document.documentElement.style.setProperty('--link-highlight-color', 'azure');
     }
     else {
-        document.documentElement.style.setProperty('--text-color', 'black');
-        // document.documentElement.style.setProperty('--inv-text-color', 'white');
-        document.documentElement.style.setProperty('--body-color', '#DAD7CD');
-        document.documentElement.style.setProperty('--card-color', '#A3B18A');
-        document.documentElement.style.setProperty('--header-color', '#588157');
-        document.documentElement.style.setProperty('--nav-color', '#3A5A40');
+        document.documentElement.style.setProperty('--text-color', 'white');
+        document.documentElement.style.setProperty('--body-color', 'black');
+        document.documentElement.style.setProperty('--card-color', '#9e6a3a');
+        document.documentElement.style.setProperty('--border-color', '#526476');
+        document.documentElement.style.setProperty('--header-color', '#4c5a69');
+        document.documentElement.style.setProperty('--link-highlight-color', 'black');
     }
 
 })
