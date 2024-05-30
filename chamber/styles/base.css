@@ -201,8 +201,8 @@ main {
 
 
 .card-image {
-    width: 400px;
-    height: 100px;
+    /* width: 400px;
+    height: 100px; */
     object-fit: scale-down;
 }
 
@@ -217,8 +217,13 @@ main {
 }
 
 #weather-events-div {
+    display: flex;
+    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #db995a; */
 }
 
 #spotlight-div {
