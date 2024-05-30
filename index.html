@@ -30,8 +30,11 @@
 <body>
 
     <header>
-        <img class='header-image' src="images/haydon-uresti-small.jpg" alt="Haydon Uresti headshot" width="100"
-            height="150">
+        <picture class='header-image'>
+            <source media="(max-width: 400px)" srcset="images/haydon-uresti-large.webp" />
+            <img src="images/haydon-uresti-small.webp" alt="Haydon Uresti headshot" "
+            height=" 150">
+        </picture>
         <h1 class="header-name">Haydon Uresti</h1>
     </header>
     <button id="menu-button"></button>
@@ -46,14 +49,18 @@
         </ul>
 
 
-
-
-
-
     </nav>
 
     <main>
+        <section id="hero-image-section">
 
+
+            <div id="hero-text">Gilbert Arizona Temple</div>
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/gilbert-arizona-temple-small.webp" />
+                <img id="hero-image" src="images/gilbert-arizona-temple-large.webp" alt="Gilbert Arizona Temple">
+            </picture>
+        </section>
         <h2 class="main-header">WDD 230: Web Frontend Development</h2>
         <div id="cards">
             <section class="card">
@@ -103,3 +110,6 @@
 
 
 </html>
+
+
+<!-- <source media="(max-width: 800px)" srcset="image path"/> Puth these in order -->

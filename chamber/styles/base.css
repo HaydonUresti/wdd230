@@ -169,7 +169,7 @@ main {
     position: absolute;
     background-color: var(--card-color);
     top: 20%;
-    left: 20%;
+    left: 25%;
     font-size: 1.25rem;
     padding: .5rem;
     border-radius: 8px;
