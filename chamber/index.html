@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+
 </head>
 
 <body>
@@ -81,8 +83,11 @@
                 </h2>
                 <img class="card-image" src="images/sunny.webp" alt="Sunny icon">
 
-                <p>Current Conditions: <span>Sunny</span></p>
-                <p>Current Temperature: <span>122&deg;</span></p>
+                <p>Current Conditions: <span id="current-conditions">Sunny</span></p>
+
+                <p>Current Temperature: <span id="tempurature">10</span>&deg;</p>
+                <p>Current Wind: <span id="windspeed">20</span>MPH</p>
+                <p>Windchill: <span id="windchill"></span></p>
             </section>
         </div>
         <section id="spotlights-section">
