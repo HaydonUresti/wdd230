@@ -41,7 +41,7 @@
         left: 32%;
     }
 
-    #call-to-action-section p::before {
+    #call-to-action-section h2::after {
         content: "Large";
     }
 

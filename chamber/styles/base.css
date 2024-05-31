@@ -153,7 +153,7 @@ main {
     position: relative;
 }
 
-#call-to-action-section p {
+#call-to-action-section h2 {
     position: absolute;
     bottom: 10%;
     right: 35%;
@@ -162,8 +162,8 @@ main {
     font-size: 2rem;
 }
 
-#call-to-action-section p::before {
-    content: "small";
+#call-to-action-section h2::after {
+    content: "Small";
 
 }
 
