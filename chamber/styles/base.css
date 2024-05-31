@@ -196,7 +196,6 @@ main {
 
 .card {
     width: 100%;
-    max-width: 1fr;
     display: flex;
     flex-direction: column;
     background-color: var(--card-color);
