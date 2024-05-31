@@ -153,6 +153,20 @@ main {
     position: relative;
 }
 
+#call-to-action-section p {
+    position: absolute;
+    bottom: 10%;
+    right: 35%;
+    background-color: grey;
+    opacity: .5;
+    font-size: 2rem;
+}
+
+#call-to-action-section p::before {
+    content: "small";
+
+}
+
 #hero-image-section img {
     margin: 1rem;
 }
@@ -164,6 +178,8 @@ main {
     max-height: 600px;
     overflow: hidden;
 }
+
+
 
 #hero-button {
     position: absolute;
@@ -201,13 +217,11 @@ main {
 
 
 .card-image {
-    /* width: 400px;
-    height: 100px; */
     object-fit: scale-down;
 }
 
 .company-card-image {
-    width: 400px;
+    width: 100px;
     height: 100px;
     object-fit: scale-down;
 }
