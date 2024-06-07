@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatooine Chamber of Commerce</title>
-    <meta name="description" content="Tatooine Chamber of Commerce - Haydon Uresti">
+    <meta name="description" content="Tatooine Chamber of Commerce Discovery Page - Haydon Uresti">
     <meta name="author" content="Haydon Uresti">
-    <meta property="og:title" content="The home page for the Tatooine Chamber of Commerce.">
+    <meta property="og:title" content="The Discovery page for the Tatooine Chamber of Commerce.">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2019/06/greetings-from-tatooine-rv.jpg">
-    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/chamber/discover.html">
     <link rel="icon" href="images/tatooine-favicon.ico">
 
 
@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+
 
 </head>
 
@@ -47,81 +48,16 @@
         </nav>
 
     </header>
-    <main>
-
-        <section id="call-to-action-section">
-
-
-            <button id="hero-button">Join the Chamber Today!</button>
-
-            <img id="hero-image" src="images/tatooine-tunisia.webp" alt="Mos Eisley">
-            <!-- <picture id="hero-image">
-                <source media="(max-width: 800px)" srcset="images/wdd230-org-small.webp">
-                <source media="(max-width: 1024px)" srcset="images/wdd230-org-medium.webp">
-                <img src="images/wdd230-org-large.webp" alt="Hero Image">
-
-            </picture>
-            <h2>Size: </h2> -->
-        </section>
-        <div id="weather-events-div">
-            <section id="current-events-section">
-
-                <div class="card" id="event1">
-                    <h2>Boonta Eve Classic</h2>
-                    <img class="card-image" src="images/mos-espa-arena.webp" alt="The Mos Espa Arena.">
-                    <p>Experience the excitement of Tatooine's premier podracing event, featuring thrilling races, local
-                        food, craft stalls, and live entertainment.</p>
-
-                </div>
-                <div class="card">
-                    <h2>Bantha Rodeo and Festival</h2>
-                    <img class="card-image" src="images/bantha-herd.webp" alt="A herd of banthas.">
-                    <p>Enjoy an action-packed day with a bantha rodeo, local cuisine, games, and entertainment,
-                        celebrating Tatooine's unique fauna and ranching heritage.</p>
-                </div>
-
-
-
-            </section>
-            <section class="card" id="weather-section">
-
-                <h2>
-                    This is the weather card
-                </h2>
-                <img class="card-image" src="images/sunny.webp" alt="Sunny icon">
-
-                <p>Current Conditions: <span id="current-conditions">Sunny</span></p>
-
-                <p>Current Temperature: <span id="tempurature">123</span>&deg;</p>
-                <p>Current Wind: <span id="windspeed">12</span>MPH</p>
-                <p>Windchill: <span id="windchill"></span></p>
-            </section>
+    <main class="discover">
+        <div class="dicover-div">
+            <p id="dicover-message"></p>
         </div>
-        <section id="spotlights-section">
-            <div id="spotlight-div">
-                <div class="card" id="spotlight1">
-                    <h4>Tusken Tours</h4>
-                    <img class="company-card-image" src="images/planet-bianary-system.webp"
-                        alt="Twin suns over desert.">
-                    <p>Explore the majestic landscapes of Tatooine with Tusken Tours, offering unique bantha-back
-                        excursions and immersive desert camping experiences inspired by Tusken Raider traditions.</p>
-                </div>
-                <div class="card" id="spotlight2">
-                    <h4>Sandcrawler Salvage</h4>
-                    <img class="company-card-image" src="images/sandcrawler.webp" alt="Sandcrawler">
-                    <p>Specializing in droid repairs and salvaged goods, Sandcrawler Salvage provides reliable service
-                        and a vast inventory of parts and equipment scavenged from the deserts of Tatooine.</p>
-                </div>
-                <div class="card" id="spotlight3">
-                    <h4>Tatooine Outfitters</h4>
-                    <img class="company-card-image" src="images/tatooine-outfitters.webp"
-                        alt="Tatooine Outfitters logo">
-                    <p>Gear up for your next adventure with Tatooine Outfitters, offering a wide selection of
-                        survival gear, clothing, and supplies designed for the harsh desert environment.</p>
-
-                </div>
-            </div>
-        </section>
+        <div id="discover-images">
+            <figure>
+                <img src="https://picsum.photos/400/400" alt="placholder" height="400" loading="lazy">
+                <figcaption>A placholder image</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <div id="footer-logo-div">
@@ -146,3 +82,6 @@
 </body>
 
 </html>
+
+
+<!-- Add 6 images     a demographic div    a local events div -->
