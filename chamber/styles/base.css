@@ -289,14 +289,3 @@ footer div p {
 
 
 /* Discovery CSS */
-
-
-
-#discover-images img {
-    transition: opacity .5s;
-}
-
-#discover-images img:hover {
-    opacity: .5;
-    /* transition: oppacity 2s; */
-}
