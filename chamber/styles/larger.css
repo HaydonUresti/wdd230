@@ -69,4 +69,37 @@
 
     }
 
+
+    /* Discover page */
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+
+    .left-side {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #discover-cards {
+        position: sticky;
+        top: 0;
+    }
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #discover-images {
+        grid-column: 2/3;
+        text-align: center;
+    }
+
 }
