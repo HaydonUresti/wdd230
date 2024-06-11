@@ -289,3 +289,6 @@ footer div p {
 
 
 /* Discovery CSS */
+figcaption {
+    color: var(--text-color)
+}

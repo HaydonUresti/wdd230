@@ -24,7 +24,8 @@ function getMessage() {
     if (lastvisit < DAY_IN_MILLIS * 2) {
         return "You last visited 1 day ago";
     }
-    let daysSinceLastVisit = Math.floor(lastvisit / DAY_IN_MILLIS);
+    let daysSinceLastVisit = Math.floor(datdiff / DAY_IN_MILLIS);
+
     return `You last visited ${daysSinceLastVisit} days ago.`;
 }
 
