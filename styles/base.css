@@ -202,3 +202,27 @@ footer p {
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
+
+
+/* For the Form */
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+
+#red {
+    color: red;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: var(--header-color);
+    border-radius: 3px;
+}
