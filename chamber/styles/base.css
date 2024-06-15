@@ -326,9 +326,11 @@ button {
 }
 
 
-#first-radio {
-    padding-top: 1rem;
+.first-radio {
+    margin-top: 1rem;
 }
+
+
 
 .radio-button {
     display: inline;
