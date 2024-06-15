@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatooine Chamber of Commerce</title>
-    <meta name="description" content="Tatooine Chamber of Commerce - Haydon Uresti">
+    <title>Tatooine Chamber of Commerce - Join Page</title>
+    <meta name="description" content="Tatooine Chamber of Commerce - Join Page">
     <meta name="author" content="Haydon Uresti">
     <meta property="og:title" content="The home page for the Tatooine Chamber of Commerce.">
     <meta property="og:type" content="website">
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
 
 </head>
 
@@ -47,8 +46,8 @@
         </nav>
 
     </header>
-    <main>
-        <form method="get" action="confirmation.html">
+    <main class="join">
+        <form method="get" action="thankyou.html">
             <label>First Name:<sup class="red">*</sup>
                 <input type="text" id="first-name" name="first-name" required>
             </label>
@@ -56,7 +55,7 @@
                 <input type="text" id="last-name" name="last-name" required>
             </label>
             <label>Title or Position:<sup class="red">*</sup>
-                <input type="text" id="position" name="position" pattern="[A-Za-z- ]{7,}" required>
+                <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}" required>
             </label>
             <label>Holo-mail:<sup class="red">*</sup>
                 <input type="email" id="email" name="email" placeholder="example@holomail.net" required>
@@ -67,14 +66,69 @@
             <label>Business/Organization Name:<sup class="red">*</sup>
                 <input type="text" id="business" name="business" required>
             </label>
-            <label>Membership Level<sup class="red">*</sup>
-                <input type="radio" id="np" name="membership-level" value="NP Membership (non-profits)">
-                <input type="radio" id="bronze" name="membership-level" value="NP Membership (non-profits)">
-                <input type="radio" id="silver" name="membership-level" value="NP Membership (non-profits)">
-                <input type="radio" id="gold" name="membership-level" value="NP Membership (non-profits)">
+
+            <label id="radio-section">Membership Level<sup class=" red">*</sup><br>
+                <div id="first-radio">
+                    <input class="radio-button" type="radio" id="np" name="membership-level"
+                        value="NP Membership (non-profits)">
+                    <label class="radio-button" for="np">NP Membership (non-profits)</label><br>
+                </div>
+                <input class="radio-button" type="radio" id="bronzium" name="membership-level"
+                    value="Bronzium Membership">
+                <label class="radio-button" for="bronzium">Bronzium Membership</label><br>
+
+                <input class="radio-button" type="radio" id="chromium" name="membership-level"
+                    value="Chromium Membership">
+                <label class="radio-button" for="chromium">Chromium Membership</label><br>
+
+                <input class="radio-button" type="radio" id="aurodium" name="membership-level"
+                    value="Aurodium Membership">
+                <label class="radio-button" for="aurodium">Aurodium Membership</label>
 
             </label>
+            <label>Business/Organization Description:
+                <input type="text" id="description" name="description">
+            </label>
+            <button type="submit" name="join-chamber-button" id="join-chamber-button">Join the Chamber!</button>
+
+            <input type="hidden" id="input-time" name="input-time" value="">
+
         </form>
+        <section class="membership-section">
+            <h2>Membership Benefits</h2>
+            <h3>NP Membership (non-profit)</h3>
+            <ul>
+                <li>Access to community events and networking opportunities.</li>
+                <li>Participation in training and development workshops.</li>
+                <li>Inclusion in the Chamber's non-profit directory.</li>
+                <li>Discounted booth space at Chamber-sponsored events.</li>
+            </ul>
+            <h3>Bronzium Membership</h3>
+            <ul>
+                <li>All NP Membership benefits.</li>
+                <li>Enhanced business listing on the Chamber's website.</li>
+                <li>Spotlight feature on the home page (rotational basis).</li>
+                <li>Discounts on advertising in Chamber publications.</li>
+                <li>Invitations to exclusive Bronzium networking events.</li>
+            </ul>
+            <h3>Chromium Membership</h3>
+            <ul>
+                <li>All Bronzium Membership benefits.</li>
+                <li>Priority placement in the Chamber's business directory.</li>
+                <li>Dedicated feature in the Chamber's monthly newsletter.</li>
+                <li>Complimentary tickets to select Chamber events.</li>
+                <li>Access to advanced training sessions and business development resources.</li>
+            </ul>
+            <h3>Aurodium Membership</h3>
+            <ul>
+                <li>All Chromium Membership benefits.</li>
+                <li>Top-tier placement in all Chamber listings and publications.</li>
+                <li>Unlimited advertising on the Chamber's platforms.</li>
+                <li>VIP access to all Chamber events, including exclusive Aurodium-only functions.</li>
+                <li>Personalized business support and consultancy from Chamber experts.</li>
+                <li>Opportunity to host and sponsor major Chamber events.</li>
+            </ul>
+        </section>
 
     </main>
     <footer>

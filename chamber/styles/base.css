@@ -292,3 +292,68 @@ footer div p {
 figcaption {
     color: var(--text-color)
 }
+
+/* For the Form */
+
+form {
+    padding-top: 1rem;
+}
+
+label {
+    font-size: large;
+    display: block;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+
+.red {
+    color: red;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: var(--card-color);
+    border-radius: 3px;
+}
+
+#first-radio {
+    padding-top: 1rem;
+    /* background-color: #db995a;
+    color: red; */
+}
+
+.radio-button {
+    display: inline;
+
+
+}
+
+
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.membership-benefits h2 {
+    margin-top: 0;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membership-benefits ul li {
+    margin: 5px 0;
+}

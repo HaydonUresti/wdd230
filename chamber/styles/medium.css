@@ -103,7 +103,16 @@
 
     #discover-images img:hover {
         opacity: .5;
-        /* transition: oppacity 2s; */
+    }
+
+    /* for join.html */
+    main {
+        max-width: 200vb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
     }
 
 }
