@@ -7,7 +7,7 @@
     <title>Tatooine Chamber of Commerce - Join Page</title>
     <meta name="description" content="Tatooine Chamber of Commerce - Join Page">
     <meta name="author" content="Haydon Uresti">
-    <meta property="og:title" content="The home page for the Tatooine Chamber of Commerce.">
+    <meta property="og:title" content="The Join Page for the Tatooine Chamber of Commerce.">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2019/06/greetings-from-tatooine-rv.jpg">
@@ -36,7 +36,7 @@
 
         <nav id="header-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
@@ -49,7 +49,7 @@
     <main class="join">
         <form method="get" action="thankyou.html">
             <label>First Name:<sup class="red">*</sup>
-                <input type="text" id="first-name" name="first-name" required>
+                <input type="text" id="first-name" name="first-name" required autofocus>
             </label>
             <label>Last Name:<sup class="red">*</sup>
                 <input type="text" id="last-name" name="last-name" required>
@@ -90,7 +90,6 @@
                 <input type="text" id="description" name="description">
             </label>
             <button type="submit" name="join-chamber-button" id="join-chamber-button">Join the Chamber!</button>
-
             <input type="hidden" id="input-time" name="input-time" value="">
 
         </form>

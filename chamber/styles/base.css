@@ -295,6 +295,10 @@ figcaption {
 
 /* For the Form */
 
+.join {
+    color: var(--text-color);
+}
+
 form {
     padding-top: 1rem;
 }
@@ -321,16 +325,13 @@ button {
     border-radius: 3px;
 }
 
+
 #first-radio {
     padding-top: 1rem;
-    /* background-color: #db995a;
-    color: red; */
 }
 
 .radio-button {
     display: inline;
-
-
 }
 
 
@@ -356,4 +357,35 @@ button {
 
 .membership-benefits ul li {
     margin: 5px 0;
+}
+
+.membership-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.membership-section h2 {
+    text-align: center;
+    margin-right: 3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+
+/* Thank You Page */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5%;
+}
+
+.thank-you {
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
 }
