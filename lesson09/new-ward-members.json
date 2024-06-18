@@ -1,0 +1,18 @@
+{
+    "familyName": "Uresti",
+    "moveInDate": "2024-06-01",
+    "numberOfRecords": 8,
+    "visited": true,
+    "familyData": [
+        {
+            "name": "Haydon",
+            "gender": "M",
+            "birthdate": "2000-06-24"
+        },
+        {
+            "name": "Sabrina",
+            "gender": "F",
+            "birthdate": "2000-06-24"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+section {
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightblue;
+    margin: 1rem;
+}
