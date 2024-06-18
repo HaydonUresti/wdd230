@@ -336,7 +336,10 @@ button {
     display: inline;
 }
 
-
+#join-chamber-button {
+    margin-top: 1rem;
+    display: block;
+}
 
 .columns {
     display: flex;

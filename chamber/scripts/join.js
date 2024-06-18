@@ -1,4 +1,5 @@
-console.log("a thing");
+// console.log("a thing");
+const time = new Date();
 let timeValue = document.getElementById("input-time");
-timeValue.value = Date.now()
-console.log(timeValue.value)
+timeValue.value = time.getTime()
+// console.log(timeValue.value)
