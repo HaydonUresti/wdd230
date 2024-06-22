@@ -226,3 +226,18 @@ button {
     background-color: var(--header-color);
     border-radius: 3px;
 }
+
+
+
+
+input:optional {
+    border-color: gray;
+}
+
+input:required {
+    border-color: black;
+}
+
+input:invalid {
+    border-color: red;
+}
