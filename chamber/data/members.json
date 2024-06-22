@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Tusken Tours",
+            "address": "841 Starport Street",
+            "address2": "Anchorhead, Tatooine 2291",
+            "phone": "244-456-7390",
+            "website": "hns://tuskentours.com",
+            "imageURL": "./images/planet-bianary-system.webp",
+            "membership": "Aurodium"
+        },
+        {
+            "name": "Sandcrawler Salvage",
+            "address": "101 Mos Eisley Boulevard",
+            "address2": "Mos Eisley, Tatooine 2355",
+            "phone": "173-356-7090",
+            "website": "hns://sandcrawlersalvage.com",
+            "imageURL": "./images/sandcrawler.webp",
+            "membership": "Chromium"
+        },
+        {
+            "name": "Tatooine Outfitters",
+            "address": "302 Bantha Drive",
+            "address2": "Mos Espa, Tatooine 42451",
+            "phone": "923-856-1890",
+            "website": "hns://tatooineoutfitters.com",
+            "imageURL": "./images/tatooine-outfitters.webp",
+            "membership": "Bronzium"
+        },
+        {
+            "name": "MoistureTech Solutions",
+            "address": "111 Sandstorm Boulevard",
+            "address2": "Mos Espa, Tatooine 42451",
+            "phone": "1234567890",
+            "website": "hns://moisturetech.com",
+            "imageURL": "./images/moisture-farm-company.webp",
+            "membership": "Aurodium"
+        },
+        {
+            "name": "Bantha Burger Grill",
+            "address": "356 Sandstorm Boulevard",
+            "address2": "Mos Espa, Tatooine 42451",
+            "phone": "349-476-2054",
+            "website": "hns://bbg.com",
+            "imageURL": "./images/bantha-burgers.webp",
+            "membership": "Chromium"
+        },
+        {
+            "name": "Tatooine Transport Services",
+            "address": "Krayt Dragon Way",
+            "address2": "Mos Eisley, Tatooine 2355",
+            "phone": "844-509-3745",
+            "website": "hns://tatooinetransports.com",
+            "imageURL": "./images/tatooine-transportation.webp",
+            "membership": "Bronzium"
+        },
+        {
+            "name": "Tatooine Education Foundation",
+            "address": "1844 Womp Rat Lane",
+            "address2": "Mos Eisley, Tatooine 2355",
+            "phone": "830-563-0573",
+            "website": "hns://tatooineeducation.com",
+            "imageURL": "./images/tatooine-education.webp",
+            "membership": "NP"
+        }
+    ]
+}

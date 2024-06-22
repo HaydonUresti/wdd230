@@ -394,3 +394,75 @@ button {
     text-align: center;
     margin-top: 50px;
 }
+
+
+/* Directory */
+
+#directory button {
+    margin: 1rem;
+}
+
+#directory-footer {
+    margin-top: 1rem;
+}
+
+/* Card view */
+
+#directory {
+    all: unset;
+}
+
+
+#members.card-mode {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* background-color: #db995a; */
+}
+
+#members .dir-card {
+    border: 1px solid var(--text-color);
+    text-align: center;
+    background-color: var(--card-color);
+    margin: 1rem;
+}
+
+#members .dir-card img {
+    max-width: 100%;
+}
+
+#members.card-mode div:nth-child(1) {
+    display: none;
+}
+
+/* List view */
+
+#members.list-mode {
+    display: block;
+}
+
+#members.list-mode img {
+    display: none;
+}
+
+#members.list-mode div {
+    all: unset;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--body-color);
+}
+
+#members.list-mode div p {
+    margin: 1rem;
+}
+
+#members.list-mode div h2 {
+    margin: 1rem;
+}
+
+#members.list-mode div:nth-child(odd) {
+    background-color: var(--card-color);
+}
+
+#members.list-mode div:nth-child(1) {
+    display: flex;
+}

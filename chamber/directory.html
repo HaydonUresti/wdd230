@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatooine Chamber of Commerce - Thank You Page</title>
-    <meta name="description" content="Tatooine Chamber of Commerce - Thank You Page">
+    <title>Tatooine Chamber of Commerce</title>
+    <meta name="description" content="Tatooine Chamber of Commerce - Haydon Uresti - Directory Page">
     <meta name="author" content="Haydon Uresti">
-    <meta property="og:title" content="The Thank You for the Tatooine Chamber of Commerce.">
+    <meta property="og:title" content="The directory page for the Tatooine Chamber of Commerce.">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2019/06/greetings-from-tatooine-rv.jpg">
-    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/chamber/thankyou.html">
+    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/chamber/directory.html">
     <link rel="icon" href="images/tatooine-favicon.ico">
 
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <script src="scripts/header-footer.js" defer></script>
-
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
             <button id="theme-button" title="Theme button"></button>
@@ -46,23 +46,29 @@
         </nav>
 
     </header>
-    <main class="join thank-you">
-        <div class="container">
-            <h1>Thank You for Joining the Tatooine Chamber of Commerce!</h1>
-            <p>
-                We are thrilled to welcome you as a valued member of our community. Your membership helps us to foster
-                economic growth and strengthen the business network on Tatooine. We look forward to supporting your
-                endeavors and seeing your business thrive. If you have any questions or need assistance, please don't
-                hesitate to reach out.
-            </p>
-            <p>
-                May the Force be with you in all your business ventures!
-            </p>
+    <main id="directory">
+        <button id="toggle-button">Toggle View</button>
+
+        <div id="members" class="card-mode">
+            <div>
+                <h2>NAME</h2>
+                <h2>MEMBERSHIP</h2>
+                <h2>ADDRESS</h2>
+                <h2>ADDRESS CONTINUED</h2>
+                <h2>PHONE NUMBER</h2>
+                <h2>WEBSITE</h2>
+
+
+
+            </div>
         </div>
+
+
     </main>
-    <footer>
+    <footer id="directory-footer">
         <div id="footer-logo-div">
             <img src="images/tatooine-chamber-of-commerce.webp" alt="logo image" width="200" height="200">
+
             <div id="company-info-div">
                 <p>Tatooine Chamger of Commerce</p>
                 <p>123 Bantha Rd. </p>

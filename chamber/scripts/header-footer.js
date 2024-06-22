@@ -25,6 +25,7 @@ darkbutton.addEventListener("click", () => {
         document.documentElement.style.setProperty('--header-color', '#828E9B');
         document.documentElement.style.setProperty('--link-highlight-color', 'azure');
     }
+
     else {
         document.documentElement.style.setProperty('--text-color', 'white');
         document.documentElement.style.setProperty('--body-color', 'black');
