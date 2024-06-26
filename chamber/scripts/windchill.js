@@ -16,4 +16,3 @@ function showWindChill(temp, wind) {
 
 
 showWindChill(parseInt(tempSpan.innerText), parseInt(windSpan.innerText));
-

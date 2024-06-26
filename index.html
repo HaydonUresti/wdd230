@@ -22,6 +22,8 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/visits.js" defer></script>
+    <script src="scripts/home-weather.js" defer></script>
+
 
 
 </head>
@@ -83,15 +85,17 @@
                     <li>08: <a href="lesson08/tablebuild.html">Table Practice</a> | <a href="form.html">Form
                             Practice</a></li>
                     <li>09: <a href="lesson09/prophets.html">Prophets Example</a></li>
-                    <li>10 : <a></a></li>
+                    <li>10 : <a href="lesson10/weather.html">Weather Example</a></li>
 
                 </ul>
             </section>
             <section class="card">
                 <h3>Information</h3>
                 <div class="info-div">
-                    <div>Location</div>
-                    <div>Weather</div>
+                    <div id="weather-location">Location</div>
+                    <div id="weather-info"></span></div>
+                    <img id="weather-icon" src="" alt="">
+                    <!-- <div id="weather-icon"></div> -->
                     <div>Number of Visits: <span id="visit-span"></span></div>
                 </div>
             </section>
@@ -112,18 +116,3 @@
 
 
 </html>
-
-
-<!-- <source media="(max-width: 800px)" srcset="image path"/> Puth these in order -->
-<!-- 600 800 1024 -->
-
-<!-- max-width: 800px   smallest
-max-width: 1024px  medium
-<img> largest -->
-
-
-<!-- .hero p::before {
-    content: "small";
-    background-color: grey;
-    opacity: .5;
-} -->
