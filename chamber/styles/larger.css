@@ -114,13 +114,24 @@
 
 
     /* for join.html */
-    main {
+    main.join {
         max-width: 200vb;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: .25fr 1fr 1fr .25fr;
         margin-bottom: 1rem;
+        grid-template-rows: none;
     }
+
+
+    form {
+        grid-column: 2/3;
+        margin-left: 25%;
+    }
+
+    .membership-section {
+        grid-column: 3/5;
+    }
+
 
 }

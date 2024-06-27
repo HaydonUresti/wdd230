@@ -301,11 +301,17 @@ figcaption {
 
 form {
     padding-top: 1rem;
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* margin-left: 25%; */
 }
 
 label {
     font-size: large;
     display: block;
+
 }
 
 input {
@@ -313,11 +319,15 @@ input {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     padding: .3rem;
+    position: relative;
 }
 
 .red {
     color: red;
+    font-size: 2rem;
+    position: unset;
 }
+
 
 button {
     font-size: 1.5rem;
@@ -463,7 +473,26 @@ button {
     background-color: var(--card-color);
 }
 
-/* TESTing */
 #members.list-mode div:nth-child(1) {
     display: flex;
+}
+
+
+/* Meet and Greet */
+
+.meet-greet {
+    grid-column: 1/4;
+    text-align: center;
+    display: none;
+    background-color: var(--card-color);
+}
+
+.meet-greet.show {
+    display: block;
+}
+
+
+.meet-greet button {
+    color: var(--text-color);
+    background-color: var(--card-color);
 }
