@@ -236,7 +236,6 @@ main {
     margin-right: 10%;
     align-items: center;
     justify-content: center;
-    /* background-color: #db995a; */
 }
 
 #spotlight-div {
@@ -301,11 +300,7 @@ figcaption {
 
 form {
     padding-top: 1rem;
-    /* text-align: center; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* margin-left: 25%; */
+
 }
 
 label {
@@ -393,7 +388,6 @@ button {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    /* background-color: #f4f4f4; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 5%;
@@ -426,7 +420,6 @@ button {
 #members.card-mode {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* background-color: #db995a; */
 }
 
 #members .dir-card {
@@ -481,7 +474,7 @@ button {
 /* Meet and Greet */
 
 .meet-greet {
-    grid-column: 1/4;
+    width: 100%;
     text-align: center;
     display: none;
     background-color: var(--card-color);
