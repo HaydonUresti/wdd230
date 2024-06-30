@@ -1,5 +1,5 @@
 let tempSpan = document.getElementById("tempurature");
-let windSpan = document.getElementById("windspeed");
+let windSpan = document.getElementById("wind-speed");
 let chillSpan = document.getElementById("windchill");
 
 function showWindChill(temp, wind) {

@@ -20,8 +20,11 @@
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
     <script src="scripts/meet-greet.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+
+
 
 
 </head>
@@ -90,17 +93,21 @@
 
             </section>
             <section class="card" id="weather-section">
+                <section id="current-weather">
+                    <h2>
+                        Current Weather
+                    </h2>
+                    <!-- <img class="card-image" src="images/sunny.webp" alt="Sunny icon"> -->
+                    <img class="card-image" id="weather-icon" src="WeatherIcon" alt="Weather Icon">
+                    <p>Current Conditions: <span id="current-conditions">Sunny</span></p>
 
-                <h2>
-                    This is the weather card
-                </h2>
-                <img class="card-image" src="images/sunny.webp" alt="Sunny icon">
-
-                <p>Current Conditions: <span id="current-conditions">Sunny</span></p>
-
-                <p>Current Temperature: <span id="tempurature">123</span>&deg;</p>
-                <p>Current Wind: <span id="windspeed">12</span>MPH</p>
-                <p>Windchill: <span id="windchill"></span></p>
+                    <p>Current Temperature: <span id="tempurature">123</span>&deg;</p>
+                    <p>Current Wind: <span id="wind-speed">12</span>MPH</p>
+                    <p>Windchill: <span id="windchill"></span></p>
+                </section>
+                <div id="forecast">
+                    <h2>Three Day Forecast</h2>
+                </div>
             </section>
         </div>
         <section id="spotlights-section">
