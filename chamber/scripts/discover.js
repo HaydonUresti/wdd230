@@ -1,5 +1,5 @@
 let today = new Date();
-const DAY_IN_MILLIS = 100 * 60 * 60 * 24;
+const DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
 const LAST_VIST_KEY = "last-visit";
 
 
