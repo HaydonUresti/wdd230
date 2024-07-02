@@ -16,7 +16,7 @@ function displayResults(data) {
     let temp = data.main.temp;
     weatherInfo.innerHTML = `${Math.round(temp)}&deg;F - ${data.weather[0].main}`;
     weatherIcon.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png')
-    windSpeed.innerHTML = `${data.wind.speed}`;
+    windSpeed.innerHTML = `${Math.round(data.wind.speed)}`;
 }
 
 async function apiFetch() {
@@ -46,34 +46,7 @@ async function apiFetch() {
 }
 
 
-// function showCurrentTimeForecast(forecasts) {
-//     const forecastDiv = document.getElementById('forecast');
-//     const timenow = forecasts[0].dt_txt.slice(11, 19);
-//     console.log(timenow)
 
-// }
-
-// function showCurrentTimeForecast(forecasts) {
-//     const weatherElt = document.getElementById("forecast");
-//     // Get the current time from the first element
-//     const timenow = forecasts[0].dt_txt.slice(11, 19);
-
-//     // Build a new list of temp forecasts with the same time
-//     let temps = forecasts.filter(x => x.dt_txt.indexOf(timenow) != -1);
-//     // Output the next three days temperatures
-//     for (let i = 1; i <= 3; i++) {
-//         let newsection = document.createElement("section");
-//         let newIcon = document.createElement("img");
-//         let mydate = temps[i].dt_txt.slice(0, 10);
-//         newsection.innerHTML = `<h3>${mydate}</h3><p>${Math.round(temps[i].main.temp)}&deg;F @ ${timenow}</p>`;
-//         newIcon.src = 'https://openweathermap.org/img/wn/' + temps[i].weather[0].icon + '@2x.png';
-
-//         weatherElt.append(newsection);
-//         weatherElt.append(newIcon);
-
-//     }
-
-// }
 const ONE_DAY = 24 * 60 * 60 * 1000
 function showHighLowForecast(forecasts) {
     // Get dates for next three days
