@@ -31,13 +31,14 @@ body {
 
 header {
     background-color: var(--header-color);
-    display: grid;
-    grid-template-rows: 1fr auto;
+    /* display: grid; */
+    /* grid-template-rows: 1fr; */
     text-align: center;
 }
 
 header h1 {
-    margin-top: -120px;
+    margin-top: -35px;
+    margin-bottom: 5px;
 }
 
 #theme-button {
@@ -60,6 +61,7 @@ header h1 {
 #logo-div {
     grid-row: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -74,12 +76,12 @@ header h1 {
     background-color: inherit;
     font-size: 2rem;
     padding: .5rem;
+    margin-bottom: 5px;
 }
 
 #button-div {
     display: flex;
     justify-content: right;
-    margin-bottom: 1rem;
     grid-row: 2;
     margin-right: 3rem;
 }
@@ -95,6 +97,8 @@ nav ul {
     list-style-type: none;
     font-size: larger;
     font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 nav ul.open {
@@ -474,6 +478,7 @@ button {
 /* Meet and Greet */
 
 .meet-greet {
+
     width: 100%;
     text-align: center;
     display: none;
