@@ -54,8 +54,8 @@
             <label for="last-name">Last Name:<sup class="red">*</sup>
                 <input type="text" id="last-name" name="last-name" required>
             </label>
-            <label for="position">Title or Position:<sup class="red">*</sup>
-                <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}" required>
+            <label for="position">Title or Position:
+                <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}">
             </label>
             <label for="email">Holo-mail:<sup class="red">*</sup>
                 <input type="email" id="email" name="email" placeholder="example@holomail.net" required>
@@ -69,7 +69,7 @@
 
             <label id="radio-section">Membership Level<sup class=" red">*</sup><br></label>
             <input class="radio-button first-radio" type="radio" id="np" name="membership-level"
-                value="NP Membership (non-profits)">
+                value="NP Membership (non-profits)" required>
             <label class="radio-button first-radio" for="np">NP Membership (non-profits)</label><br>
             <input class="radio-button" type="radio" id="bronzium" name="membership-level" value="Bronzium Membership">
             <label class="radio-button" for="bronzium">Bronzium Membership</label><br>
@@ -82,7 +82,7 @@
 
 
             <label>Business/Organization Description: </label>
-            <textarea id="description" name="description"></textarea>
+            <textarea id="description" name="description" rows="6" cols="32"></textarea>
 
             <button type="submit" name="join-chamber-button" id="join-chamber-button">Join the Chamber!</button>
             <input type="hidden" id="input-time" name="input-time" value="" for="join-chamber-button">
