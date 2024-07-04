@@ -444,7 +444,15 @@ button {
 /* List view */
 
 #members.list-mode {
-    display: block;
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem; */
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+    /* grid-template-rows: repeat(6, 1fr); */
 }
 
 #members.list-mode img {
@@ -453,13 +461,24 @@ button {
 
 #members.list-mode div {
     all: unset;
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     background-color: var(--body-color);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #members.list-mode div p {
-    margin: 1rem;
+    /* margin: 1rem; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
 #members.list-mode div h2 {
