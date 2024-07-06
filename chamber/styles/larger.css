@@ -161,4 +161,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* Directory */
+
+    #member-section.section-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

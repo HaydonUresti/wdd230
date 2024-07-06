@@ -420,6 +420,13 @@ button {
     all: unset;
 }
 
+#member-section.section-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
 
 #members.card-mode {
     display: grid;
@@ -444,15 +451,16 @@ button {
 /* List view */
 
 #members.list-mode {
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    width: 70%;
-    padding-left: 1rem;
-    padding-right: 1rem; */
     display: grid;
     justify-items: center;
     padding: 1rem;
-    /* grid-template-rows: repeat(6, 1fr); */
+    width: 70%;
+    box-sizing: border-box;
+
+}
+
+#members.list-mode h2 {
+    font-size: small;
 }
 
 #members.list-mode img {
@@ -461,14 +469,26 @@ button {
 
 #members.list-mode div {
     all: unset;
-    /* display: flex; */
     justify-content: space-around;
     background-color: var(--body-color);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 70%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100%;
+    word-wrap: break-word;
+    /* margin-right: 1rem; */
+}
+
+.dir-card p,
+h2,
+a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dir-card a {
+    align-self: center;
+    margin-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 #members.list-mode div p {
@@ -481,17 +501,17 @@ button {
     unicode-bidi: isolate;
 }
 
-#members.list-mode div h2 {
+/* #members.list-mode div h2 {
     margin: 1rem;
-}
+} */
 
 #members.list-mode div:nth-child(odd) {
     background-color: var(--card-color);
 }
 
-#members.list-mode div:nth-child(1) {
+/* #members.list-mode div:nth-child(1) {
     display: flex;
-}
+} */
 
 
 /* Meet and Greet */

@@ -57,7 +57,6 @@ function showHighLowForecast(forecasts) {
         let nextdate = mydate.toISOString().slice(0, 10)
         dates.push(nextdate)
     }
-    console.log(dates)
 
     // Find the object with the highest temperature for each day
     const highTemps = dates.map((date) => forecasts
