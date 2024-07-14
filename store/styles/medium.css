@@ -82,4 +82,40 @@
 
     }
 
+
+    /*Main */
+
+    main {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr; */
+    }
+
+    #weather {
+        display: flex;
+    }
+
+    #combine-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+
+    #weather {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #forecast {
+        grid-row: 1/3;
+        grid-column: 2;
+    }
+
+    #info {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+
 }

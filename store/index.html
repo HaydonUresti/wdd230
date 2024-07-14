@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <!-- JavaScript -->
     <script src="scripts/feader-footer.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
 
         <div class="wrap">
             <div class="search">
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <input type="text" class="search-term" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton"><strong>Search</strong>
                 </button>
             </div>
@@ -49,8 +50,52 @@
 
 
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+
+
+        <div id="call-to-action-section">
+
+            <a href="order.html" target="_blank">
+                <button id="hero-button">Find Your Perfect Box Now!</button>
+            </a>
+
+            <img id="hero-image" src="images/hero-image.webp" alt="Mos Eisley">
+
+        </div>
+        <section id="featured-products">
+
+        </section>
+
+        <div id="combine-div">
+            <section id="weather">
+                <section id="weather-current" class="card">
+                    <h2>Current Weather</h2>
+                    <p><img class="card-image" id="weather-icon" src="WeatherIcon" alt="Weather Icon">
+                    <p><strong>Current Conditions:</strong> <span id="current-conditions">Sunny</span></p>
+
+                    <p><strong>Current Temperature:</strong> <span id="tempurature">123</span></p>
+                    <p><strong>Current Wind:</strong> <span id="wind-speed">12</span>MPH</p>
+                    </p>
+                </section>
+                <div id="forecast">
+                    <h2>Three Day Forecast</h2>
+                </div>
+            </section>
+            <section id="info" class="card">
+                <h2>User Info</h2>
+                <p>You have ordered <span id="order-count">0</span> items!</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-img">
+            <img id="logo" src="images/big-box-store-logo-tiny.webp">
+        </div>
+        <footer>
+            <p>©<span id="currentYear">2024</span> <br> Haydon Uresti <br> Idaho, USA </p>
+            <p id="lastModified">Last Modified</p>
+        </footer>
+    </footer>
 </body>
 
 </html>

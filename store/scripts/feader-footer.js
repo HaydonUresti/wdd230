@@ -1,8 +1,8 @@
 // Last updated and date info
 // Set the copyright date in the footer
-// document.querySelector('#currentYear').innerHTML = `${new Date().getFullYear()}`;
+document.querySelector('#currentYear').innerHTML = `${new Date().getFullYear()}`;
 // Set the last modified date in the footer
-// document.querySelector("#lastModified").innerHTML = `Last Modified: ${document.lastModified}`;
+document.querySelector("#lastModified").innerHTML = `Last Modified: ${document.lastModified}`;
 
 
 // The hamburger menu

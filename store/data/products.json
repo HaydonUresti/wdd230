@@ -1,0 +1,100 @@
+{
+    "products": [
+        {
+            "ProductIdentifier": "SKU001",
+            "ProductName": "Original Box",
+            "ProductDescription": "The classic cardboard box for all your packing needs.",
+            "ProductImageURL": "images/original-box.webp",
+            "ProductPrice": 5.99,
+            "FeaturedProduct": true
+        },
+        {
+            "ProductIdentifier": "SKU002",
+            "ProductName": "Hard Box",
+            "ProductDescription": "A sturdy safe to protect your valuables.",
+            "ProductImageURL": "images/hard-box.webp",
+            "ProductPrice": 199.99,
+            "FeaturedProduct": true
+        },
+        {
+            "ProductIdentifier": "SKU003",
+            "ProductName": "Cold Box",
+            "ProductDescription": "A refrigerator to keep your food fresh and cool.",
+            "ProductImageURL": "images/cold-box.webp",
+            "ProductPrice": 899.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU004",
+            "ProductName": "Fast Box",
+            "ProductDescription": "A sleek and fast car to get you where you need to go.",
+            "ProductImageURL": "images/fast-box.webp",
+            "ProductPrice": 24999.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU005",
+            "ProductName": "Nerd Box",
+            "ProductDescription": "A powerful computer for all your nerdy needs.",
+            "ProductImageURL": "images/nerd-box.webp",
+            "ProductPrice": 1299.99,
+            "FeaturedProduct": true
+        },
+        {
+            "ProductIdentifier": "SKU006",
+            "ProductName": "Loud Box",
+            "ProductDescription": "A Bluetooth speaker to blast your favorite tunes.",
+            "ProductImageURL": "images/loud-box.webp",
+            "ProductPrice": 129.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU007",
+            "ProductName": "Hot Box",
+            "ProductDescription": "A microwave oven for quick and easy meals.",
+            "ProductImageURL": "images/hot-box.webp",
+            "ProductPrice": 89.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU008",
+            "ProductName": "Magic Box",
+            "ProductDescription": "A smartphone.",
+            "ProductImageURL": "images/magic-box.webp",
+            "ProductPrice": 574.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU009",
+            "ProductName": "Chill Box",
+            "ProductDescription": "An air conditioner to keep you cool in the summer.",
+            "ProductImageURL": "images/chill-box.webp",
+            "ProductPrice": 299.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU010",
+            "ProductName": "Snack Box",
+            "ProductDescription": "An assortment of delicious snacks.",
+            "ProductImageURL": "images/snack-box.webp",
+            "ProductPrice": 19.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU011",
+            "ProductName": "Picture Box",
+            "ProductDescription": "A high-definition TV for your viewing pleasure.",
+            "ProductImageURL": "images/picture-box.webp",
+            "ProductPrice": 499.99,
+            "FeaturedProduct": false
+        },
+        {
+            "ProductIdentifier": "SKU012",
+            "ProductName": "Bread Box",
+            "ProductDescription": "A stylish container to keep your bread fresh and delicious.",
+            "ProductImageURL": "images/bread-box.webp",
+            "ProductPrice": 29.99,
+            "FeaturedProduct": false
+        }
+    ]
+}
