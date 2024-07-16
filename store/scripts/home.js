@@ -117,7 +117,8 @@ function showHighLowForecast(forecasts) {
     for (let i = 0; i < 3; i++) {
         let date = dates[i].split("-");
         let newsection = document.createElement("section");
-        newsection.innerHTML = `<div><h3>${date[1]}-${date[2]}-${date[0]}</h3><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;F</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p><div>`
+        newsection.innerHTML = `<div><h3>${date[1]}-${date[2]}-${date[0]}</h3><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;F</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p> <div>`
+
         newsection.classList.add('forecast-data');
         let newIcon = document.createElement("img");
         // It may not be the most correct to jsut get the icon for the hottest part of the day, but I wanted to do so because

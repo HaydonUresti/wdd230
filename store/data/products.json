@@ -54,7 +54,7 @@
             "ProductDescription": "A microwave oven for quick and easy meals.",
             "ProductImageURL": "images/hot-box.webp",
             "ProductPrice": 89.99,
-            "FeaturedProduct": false
+            "FeaturedProduct": true
         },
         {
             "ProductIdentifier": "SKU008",
