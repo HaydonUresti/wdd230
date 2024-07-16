@@ -11,7 +11,7 @@ const displayCards = (products) => {
             <h4>${product.ProductName}</h4>
             <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
             <p>${product.ProductDescription}</p>
-            <button>Order</button>
+            <button>Order Now!</button>
             <p><strong>$${product.ProductPrice}</strong></p>
             
         `
@@ -136,8 +136,6 @@ function showHighLowForecast(forecasts) {
     }
 }
 
-
-apiFetch();
-
 // Run functions
+apiFetch();
 getFeaturedData();
