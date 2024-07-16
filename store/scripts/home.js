@@ -45,7 +45,7 @@ const weatherInfo = document.querySelector('#tempurature');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#current-conditions');
 const weatherLocation = document.querySelector('#weather-location');
-const windSpeed = document.querySelector('#wind-speed');
+const humidity = document.querySelector('#humidity');
 
 
 
@@ -54,7 +54,7 @@ function displayResults(data) {
     captionDesc.innerHTML = `${data.weather[0].description}`
     weatherInfo.innerHTML = `${Math.round(temp)}&deg;F - ${data.weather[0].main}`;
     weatherIcon.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png')
-    windSpeed.innerHTML = `${Math.round(data.wind.speed)}`;
+    humidity.innerHTML = `${data.main.humidity}`;
 }
 
 async function apiFetch() {
