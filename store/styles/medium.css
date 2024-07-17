@@ -198,10 +198,7 @@
 
     /* Products Page */
     #products-section {
-        /* display: flex;
-        flex-direction: row;
-        /* max-width: 100%; */
-        /* flex-flow: row; */
+        max-width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
