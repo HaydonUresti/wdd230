@@ -9,7 +9,7 @@
     <meta name="author" content="Haydon Uresti">
     <meta property="og:title" content="The home page for The Big Box Store.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/hero-image.webp">
     <meta property="og:url" content="https://haydonuresti.github.io/wdd230/store/index.html">
     <link rel="icon" href="images/favicon2.ico">
 
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/base.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JavaScript -->
     <script src="scripts/feader-footer.js" defer></script>
     <script src="scripts/home.js" defer></script>
@@ -69,7 +70,7 @@
 
             <div id="combine-div">
                 <section id="weather-current" class="card">
-                    <h2>Current Weather</h2>
+                    <h2>Current Weather in Salt Lake City</h2>
                     <p><img class="card-image" id="weather-icon" src="WeatherIcon" alt="Weather Icon">
                     <p><strong>Current Conditions:</strong> <span id="current-conditions">Sunny</span></p>
 
@@ -78,7 +79,7 @@
                     </p>
                 </section>
                 <div id="forecast">
-                    <h2>Three Day Forecast</h2>
+                    <h2>Salt Lake City Three Day Forecast</h2>
                 </div>
                 <section id="info" class="card">
                     <h2>User Info</h2>
@@ -88,13 +89,31 @@
         </div>
     </main>
     <footer>
-        <div id="footer-img">
-            <img id="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy">
+        <div id="top-footer">
+            <div id="footer-img">
+                <img id="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy">
+            </div>
+            <div id="company-contact">
+                <p>email@bbs.com<br>123-456-7890<br>846 Main St. Salt Lake City, UT 89234</p>
+            </div>
+
+            <p id="last-modified">Last Modified<br></p>
+            <div id="current-year">
+                <p>©<span id="currentYear">2024</span> Haydon Uresti Idaho, USA </p>
+            </div>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </div>
         </div>
-        <footer>
-            <p>©<span id="currentYear">2024</span> <br> Haydon Uresti <br> Idaho, USA </p>
-            <p id="lastModified">Last Modified</p>
-        </footer>
+        <section id="attribution">
+            <h3>Attibutions</h3>
+            <ul id="attribution-list">
+                <li><a href="https://openweathermap.org/">openweathermap.org</a></li>
+            </ul>
+        </section>
+
     </footer>
 </body>
 
