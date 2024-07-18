@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Big Box Store</title>
-    <meta name="description" content="The Big Box Store Products Page- Haydon Uresti">
+    <meta name="description" content="The Big Box Store Order Page - Haydon Uresti">
     <meta name="author" content="Haydon Uresti">
-    <meta property="og:title" content="The products page for The Big Box Store.">
+    <meta property="og:title" content="The order page for The Big Box Store.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/hero-image.webp">
-    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/store/products.html">
+    <meta property="og:url" content="https://haydonuresti.github.io/wdd230/store/order.html">
     <link rel="icon" href="images/favicon2.ico">
 
     <!-- CSS -->
@@ -19,16 +19,15 @@
     <link rel="stylesheet" href="styles/medium.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/larger.css" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- JavaScript -->
-    <script src="scripts/feader-footer.js"></script>
-    <script src="scripts/products.js" defer></script>
+    <script src="scripts/feader-footer.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
     <header>
         <div id="logo">
-            <img id="logo" src="images/big-box-store-logo-small.webp">
+            <img id="logo" src="images/big-box-store-logo-small.webp" loading="lazy">
         </div>
 
         <div class="wrap">
@@ -40,8 +39,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Order</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="about-us.html">About Us</a></li>
             </ul>
         </nav>
@@ -49,11 +48,45 @@
             <button id="menu-button" title="Navigation button"></button>
         </div>
 
-    </header>
-    <main class="products-page">
-        <section id="products-section">
 
-        </section>
+
+    </header>
+    <main class="main">
+
+
+        <div id="call-to-action-section">
+
+            <a href="products.html" target="_blank">
+                <button id="hero-button">Find Your Perfect Box Now!</button>
+            </a>
+
+            <img id="hero-image" src="images/hero-image.webp" alt="Pile of Boxes" loading="lazy">
+
+        </div>
+        <div id="card-div">
+            <section id="featured-products">
+
+            </section>
+
+            <div id="combine-div">
+                <section id="weather-current" class="card">
+                    <h2>Current Weather in Salt Lake City</h2>
+                    <p><img class="card-image" id="weather-icon" src="WeatherIcon" alt="Weather Icon">
+                    <p><strong>Current Conditions:</strong> <span id="current-conditions">Sunny</span></p>
+
+                    <p><strong>Current Temperature:</strong> <span id="tempurature">123</span></p>
+                    <p><strong>Current Humidity:</strong> <span id="humidity">12</span>%</p>
+                    </p>
+                </section>
+                <div id="forecast">
+                    <h2>Salt Lake City Three Day Forecast</h2>
+                </div>
+                <section id="info" class="card">
+                    <h2>User Info</h2>
+                    <p>You have ordered <span id="order-count">0</span> items!</p>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="top-footer">
@@ -125,6 +158,7 @@
                 <li><a
                         href="https://www.google.com/imgres?q=salt%20lake%20city&imgurl=https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F603fe43952a3e73ea42b22a4%2F16%3A9%2Fw_2560%252Cc_limit%2F01-velo-slc-header-downtown-slc.jpg&imgrefurl=https%3A%2F%2Fwww.cntraveler.com%2Fstory%2Fweekend-guide-salt-lake-city&docid=g5uxToYGuUAMkM&tbnid=an155bkmHd-2YM&vet=12ahUKEwisos_yoq-HAxUXFDQIHc_uBCwQM3oECBYQAA..i&w=2560&h=1440&hcb=2&ved=2ahUKEwisos_yoq-HAxUXFDQIHc_uBCwQM3oECBYQAA">Salt
                         Lake City Mountains Photo</a></li>
+
 
             </ul>
         </section>
