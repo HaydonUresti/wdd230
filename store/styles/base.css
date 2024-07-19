@@ -405,6 +405,11 @@ a {
     margin-bottom: 1rem;
 }
 
+.product-card p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 .product-card button {
     margin-bottom: 1rem;
 }

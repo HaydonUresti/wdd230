@@ -13,7 +13,7 @@ const populateProduts = (products) => {
             <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
-            <a href="order.html?product=${product.ProductName}">
+            <a href="order.html?product=${productCounter}">
             <button id="order-button">Order Now</button
             </a>
             `

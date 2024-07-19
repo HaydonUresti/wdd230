@@ -106,9 +106,6 @@
         max-width: 1px;
     }
 
-    main {
-        /* max-width: 1700px; */
-    }
 
     /* featured */
 
@@ -179,4 +176,22 @@
         height: auto;
 
     }
+
+    /* Order Page */
+
+    .order {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #product-section {
+        grid-column: 2;
+    }
+
+    .order form {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 2rem;
+    }
+
 }
