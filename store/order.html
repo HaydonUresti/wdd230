@@ -78,10 +78,10 @@
                         <input type="text" id="city" name="city" required>
                     </label>
                     <label for="state">State:<sup class="red">*</sup>
-                        <input type="text" id="state" name="state" required>
+                        <input type="text" id="state" name="state" pattern="[A-Z]{2}" required>
                     </label>
                     <label for="zip-code">Zip Code:<sup class="red">*</sup>
-                        <input type="text" id="zip-code" name="zip-code" required>
+                        <input type="text" id="zip-code" name="zip-code" pattern="[0-9]{5}" required>
                     </label>
                 </div>
 
@@ -90,7 +90,7 @@
                     <textarea id="description" name="description" rows="6" cols="32"></textarea>
 
                     <button type="submit" name="purchase-button" id="purchase-button">Checkout</button>
-                    <input type="hidden" id="input-time" name="input-time" value="" for="purchase-button">
+                    <input type="hidden" id="SKU" name="SKU" value="" for="purchase-button">
                 </div>
 
             </form>

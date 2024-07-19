@@ -1,9 +1,3 @@
-// let url = new URL(window.location);
-// let itemNum = url.searchParams;
-
-
-// console.log(itemNum[0]);
-
 let url = new URL(window.location);
 let params = url.searchParams;
 const productsSection = document.getElementById("product-section");
@@ -13,26 +7,33 @@ const path = './data/products.json'
 
 // Remove this when you are done inspecting parameters in the console
 for (const p of params) {
-    var itemNum = p;
+    var SKU = p;
 }
 
 
+function addSKU(SKU) {
+    const hiddenField = document.getElementById("SKU");
+    hiddenField.setAttribute("value", SKU)
+
+}
 
 const populateOrder = (product) => {
-    // this value will be passed to the button as the value attribute to give to the Order page.
-    let productCounter = 0;
     let newCard = document.createElement("div");
     newCard.innerHTML = `
         
         <h2>${product.ProductName}</h2>
         <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
         <p>${product.ProductDescription}</p>
-        <p><strong>$${product.ProductPrice}</strong></p>
-        </a>
+        <div id="cost-div">
+        <p>Subtotal: $${product.ProductPrice}</p>
+        <p>Sales Tax: 5%</p>
+        <p><strong>Total: $${(product.ProductPrice + (product.ProductPrice * .05)).toFixed(2)}</strong></p>
+        </div>
         `
     productsSection.append(newCard);
     newCard.classList.add("card")
     newCard.classList.add("product-card")
+    addSKU(product.ProductIdentifier)
 }
 
 
@@ -41,7 +42,7 @@ async function getProductData() {
 
     if (response.ok) {
         const data = await response.json();
-        populateOrder(data.products[itemNum[1]]);
+        populateOrder(data.products.find(product => product.ProductIdentifier === SKU[1]));
     }
     else {
         console.log("There is an issue with retrieving the product data.")
@@ -50,3 +51,5 @@ async function getProductData() {
 }
 
 getProductData();
+
+
