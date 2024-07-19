@@ -1,13 +1,30 @@
 let url = new URL(window.location);
 let params = url.searchParams;
 const productsSection = document.getElementById("product-section");
+const path = './data/products.json';
+const orderButton = document.getElementById("purchase-button");
 
-const path = './data/products.json'
+orderButton.addEventListener("click", updateOrderCount())
 
 
 // Remove this when you are done inspecting parameters in the console
 for (const p of params) {
     var SKU = p;
+}
+
+
+
+function updateOrderCount() {
+    let orderCount = localStorage.getItem("order-count");
+    if (orderCount == null) {
+        orderCount = 0;
+    }
+    else {
+        orderCount = parseInt(orderCount)
+    }
+    orderCount += 1
+    localStorage.setItem("site-visits", `${orderCount}`);
+    console.log("Updated the count to " + orderCount)
 }
 
 

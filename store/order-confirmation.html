@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JavaScript -->
     <script src="scripts/feader-footer.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/order-confirmation.js" defer></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about-us.html">About Us</a></li>
             </ul>
@@ -51,8 +51,34 @@
 
 
     </header>
-    <main class="order">
+    <main class="order-confirmation">
+        <section id="order-details" class="order-info-box">
+            <h2>Thank you for purchase!</h2>
+            <p>A confirmation email and receipt will be sent to <span id="email"></span></p>
+            <div>
+                <p>Order Number: <strong><span id="order-num"></span></strong></p>
+                <p>Total: <strong>$<span id="total"></span></strong><sup>*Payment is due upon delivery</sup></p>
+                <p id="name-p">Delivered To: <strong><span id="name"></span></p><span id="address"></span></strong>
+                <p>Estimated Delivery: <strong><span id="delivery"></span></strong></p>
+            </div>
+        </section>
+        <div id="product-card"></div>
+        <section id="contact-section" class="order-info-box">
+            <h3>Questions or Concerns? We're here for you!</h3>
+            <h4>Reach us by:</h4>
+            <p><strong>Phone: </strong>123-456-7890</p>
+            <p><strong>Email: </strong>email@bbs.com</p>
 
+            <div id="contact-media">
+                <h4>Satisfied with your experience? Leave us a review!</h4>
+                <div id="contact-media-buttons">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer>
         <div id="top-footer">
@@ -69,7 +95,7 @@
             </div>
             <div id="social-media">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
                 <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
             </div>
         </div>
@@ -125,6 +151,9 @@
                         href="https://www.google.com/imgres?q=salt%20lake%20city&imgurl=https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F603fe43952a3e73ea42b22a4%2F16%3A9%2Fw_2560%252Cc_limit%2F01-velo-slc-header-downtown-slc.jpg&imgrefurl=https%3A%2F%2Fwww.cntraveler.com%2Fstory%2Fweekend-guide-salt-lake-city&docid=g5uxToYGuUAMkM&tbnid=an155bkmHd-2YM&vet=12ahUKEwisos_yoq-HAxUXFDQIHc_uBCwQM3oECBYQAA..i&w=2560&h=1440&hcb=2&ved=2ahUKEwisos_yoq-HAxUXFDQIHc_uBCwQM3oECBYQAA">Salt
                         Lake City Mountains Photo</a></li>
 
+                <li><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Random
+                        Number Generator</a></li>
 
             </ul>
         </section>

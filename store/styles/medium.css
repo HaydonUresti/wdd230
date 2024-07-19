@@ -297,6 +297,26 @@
         align-content: center;
     }
 
+    .order-confirmation {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+    }
+
+    #order-details {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #contact-media {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #product-card {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
 
 
 }

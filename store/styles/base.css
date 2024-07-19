@@ -325,10 +325,6 @@ footer div p {
     margin-top: 2pix;
 }
 
-/* footer div p {
-    margin-top: 0;
-    margin-bottom: 0;
-} */
 
 footer img {
     max-width: 200px;
@@ -381,10 +377,11 @@ a {
     color: white;
 }
 
-.fa-youtube {
-    background: #bb0000;
+.fa-pinterest {
+    background: #cb2027;
     color: white;
 }
+
 
 .fa-instagram {
     background: #125688;
@@ -423,8 +420,6 @@ a {
 
 #attribution-list {
     display: inline;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
 }
 
 #attribution-list li {
@@ -521,4 +516,32 @@ label input {
     margin-left: auto;
     margin-right: auto;
 
+}
+
+/* Order Confirmation */
+
+.order-info-box {
+    border: 1px solid var(--secondary-color);
+    margin: 1rem;
+}
+
+.order-info-box>* {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#contact-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name-p {
+    margin-bottom: 0;
+}
+
+span#address {
+    text-indent: 4rem;
+    margin-left: 6.35rem;
 }

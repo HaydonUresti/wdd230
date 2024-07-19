@@ -1,6 +1,22 @@
 const featuredSection = document.getElementById("featured-products");
 const path = './data/products.json'
 
+let orders = getNumberOfOrders();
+let orderSpan = document.getElementById("order-count")
+orderSpan.innerHTML = orders;
+
+function getNumberOfOrders() {
+    let orderCount = localStorage.getItem("order-count");
+    if (orderCount == null) {
+        orderCount = 0;
+    }
+    else {
+        orderCount = parseInt(orderCount)
+    }
+    localStorage.setItem("site-visits", `${orderCount}`);
+    return orderCount
+}
+
 
 const displayCards = (products) => {
     products.forEach((product) => {
@@ -11,7 +27,9 @@ const displayCards = (products) => {
             <h4>${product.ProductName}</h4>
             <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
             <p>${product.ProductDescription}</p>
+            <a href="order.html?ProductIdentifier=${product.ProductIdentifier}">
             <button>Order Now!</button>
+            </a>
             <p><strong>$${product.ProductPrice}</strong></p>
             
         `
