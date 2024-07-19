@@ -11,11 +11,13 @@ const populateProduts = (products) => {
         
             <h2>${product.ProductName}</h2>
             <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
+            <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
             <a href="order.html?ProductIdentifier=${product.ProductIdentifier}">
             <button id="order-button">Order Now</button
             </a>
+            </div>
             `
         productsSection.append(newCard);
         newCard.classList.add("card")

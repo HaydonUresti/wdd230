@@ -26,12 +26,14 @@ const displayCards = (products) => {
             <h2>Best Seller!</h2>
             <h4>${product.ProductName}</h4>
             <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
+            <div id="desc-div">
             <p>${product.ProductDescription}</p>
+            <p><strong>$${product.ProductPrice}</strong></p>
+
             <a href="order.html?ProductIdentifier=${product.ProductIdentifier}">
             <button>Order Now!</button>
             </a>
-            <p><strong>$${product.ProductPrice}</strong></p>
-            
+            </div>
         `
             featuredSection.append(newCard);
             newCard.classList.add("card")
