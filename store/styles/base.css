@@ -224,7 +224,7 @@ main {
 
 #hero-button {
     position: absolute;
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
     top: 20%;
     left: 25%;
     font-size: 1.25rem;
@@ -292,7 +292,7 @@ main {
 }
 
 #forecast hr {
-    border-color: var(--secondary-color);
+    border-color: var(--text-color);
     width: 80%;
 }
 
