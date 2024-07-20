@@ -21,10 +21,7 @@
 
 
     nav {
-        direction: flex;
-        /* align-items: center; */
         align-content: center;
-        /* text-align: center; */
         grid-column: 3;
     }
 
