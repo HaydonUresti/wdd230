@@ -28,13 +28,14 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img class="logo" src="images/big-box-store-logo-small.webp" loading="lazy">
+        <div id="logo-div">
+            <img id="logo" src="images/big-box-store-logo-small.webp" alt="The Big Box Store Logo" loading="lazy">
         </div>
 
         <div class="wrap">
             <div class="search">
-                <input type="text" class="search-term" placeholder="What are you looking for?">
+                <label for="search-bar" class="sr-only">Search Bar</label>
+                <input type="text" name="search-bar" class="search-term" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton"><strong>Search</strong>
                 </button>
             </div>
@@ -49,9 +50,6 @@
         <div id="button-div">
             <button id="menu-button" title="Navigation button"></button>
         </div>
-
-
-
     </header>
     <main>
         <div class="about-us">
@@ -95,7 +93,7 @@
     <footer>
         <div id="top-footer">
             <div id="footer-img">
-                <img class="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy">
+                <img class="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy" alt="The Big Box Store Logo">
             </div>
             <div id="company-contact">
                 <p>email@bbs.com<br>123-456-7890<br>846 Main St. Salt Lake City, UT 89234</p>
@@ -115,8 +113,6 @@
                 <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
             </div>
         </div>
-
-
     </footer>
 </body>
 

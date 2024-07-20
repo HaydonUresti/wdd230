@@ -28,13 +28,14 @@
 
 <body>
     <header>
-        <div id="logo">
-            <img id="logo" src="images/big-box-store-logo-small.webp">
+        <div id="logo-div">
+            <img id="logo" src="images/big-box-store-logo-small.webp" alt="The Big Box Store Logo" loading="lazy">
         </div>
 
         <div class="wrap">
             <div class="search">
-                <input type="text" class="search-term" placeholder="What are you looking for?">
+                <label for="search-bar" class="sr-only">Search Bar</label>
+                <input type="text" name="search-bar" class="search-term" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton"><strong>Search</strong>
                 </button>
             </div>
@@ -49,7 +50,6 @@
         <div id="button-div">
             <button id="menu-button" title="Navigation button"></button>
         </div>
-
     </header>
     <main class="products-page">
         <section id="products-section">
@@ -59,17 +59,19 @@
     <footer>
         <div id="top-footer">
             <div id="footer-img">
-                <img id="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy">
+                <img class="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy" alt="The Big Box Store Logo">
             </div>
             <div id="company-contact">
                 <p>email@bbs.com<br>123-456-7890<br>846 Main St. Salt Lake City, UT 89234</p>
             </div>
+
             <div id="attribution-div">
                 <a id="attribution-link" href="attributions.html">Attributions</a>
             </div>
+
             <p id="last-modified">Last Modified<br></p>
             <div id="current-year">
-                <p>©<span id="currentYear"></span> Haydon Uresti Idaho, USA </p>
+                <p>©<span id="currentYear">2024</span> Haydon Uresti Idaho, USA </p>
             </div>
             <div id="social-media">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
