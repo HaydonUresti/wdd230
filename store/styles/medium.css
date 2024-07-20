@@ -11,7 +11,6 @@
     }
 
     nav {
-        direction: flex;
         align-content: center;
         grid-column: 3;
     }
@@ -85,7 +84,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 1fr;
 
     }
 
@@ -170,14 +168,12 @@
 
     }
 
-    #social-media a {
-        margin-right: 5px;
 
-        #social-media a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    #social-media a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
     }
 
     #social-media:first-child {
