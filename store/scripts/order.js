@@ -2,12 +2,9 @@ let url = new URL(window.location);
 let params = url.searchParams;
 const productsSection = document.getElementById("product-section");
 const path = './data/products.json';
-// const orderButton = document.getElementById("purchase-button");
-
-// orderButton.addEventListener("click", updateOrderCount())
 
 
-// Remove this when you are done inspecting parameters in the console
+
 for (const p of params) {
     var SKU = p;
 }

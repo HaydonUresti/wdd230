@@ -5,13 +5,7 @@ let params = url.searchParams;
 const path = './data/products.json'
 let SKU = params.get("SKU")
 
-// Remove this when you are done inspecting parameters in the console
 
-// Add the URL values
-
-// function populateOrderInfo() {
-
-// }
 
 function getRandomIntInclusive(min, max) {
     const minCeiled = Math.ceil(min);
@@ -19,11 +13,7 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
 }
 
-// function addSKU(SKU) {
-//     const hiddenField = document.getElementById("SKU");
-//     hiddenField.setAttribute("value", SKU)
 
-// }
 
 function getDeliveryDate() {
     const DAY = 86400000;
@@ -43,7 +33,6 @@ function updateOrderCount() {
     }
     orderCount += 1
     localStorage.setItem("order-count", `${orderCount}`);
-    console.log("Updated the count to " + orderCount)
 }
 
 const populateOrder = (product) => {
@@ -62,7 +51,7 @@ const populateOrder = (product) => {
     newCard.innerHTML = `
         
         <h2>${product.ProductName}</h2>
-        <p>${product.ProductIdentifier}</p>
+        <p>Product ID: ${product.ProductIdentifier}</p>
         <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
         <p>${product.ProductDescription}</p>
         <div id="cost-div">

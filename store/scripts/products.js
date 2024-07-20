@@ -10,12 +10,12 @@ const populateProduts = (products) => {
         newCard.innerHTML = `
         
             <h2>${product.ProductName}</h2>
-            <img src="${product.ProductImageURL}" alt="${product.name}" loading="lazy" height="200" width="">
+            <img src="${product.ProductImageURL}" alt="${product.ProductName}" loading="lazy" height="200" width="">
             <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
             
-            <button id="order-button" onclick="window.location.href='order.html?ProductIdentifier=${product.ProductIdentifier}'" aria-label="A link to order th ${product.name}">Order Now</button
+            <button id="order-button" onclick="window.location.href='order.html?ProductIdentifier=${product.ProductIdentifier}'" aria-label="A link to order the ${product.ProductName}">Order Now</button
     
             </div>
             `
