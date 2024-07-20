@@ -14,7 +14,7 @@ const populateProduts = (products) => {
             <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
-            <a href="order.html?ProductIdentifier=${product.ProductIdentifier}">
+            <a href="order.html?ProductIdentifier=${product.ProductIdentifier} aria-label='Link to the Order page'">
             <button id="order-button">Order Now</button
             </a>
             </div>
