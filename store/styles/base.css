@@ -397,7 +397,6 @@ a {
 }
 
 .fa {
-    text-rendering: unset;
     padding: 20px;
     font-size: 30px;
     width: 50px;
