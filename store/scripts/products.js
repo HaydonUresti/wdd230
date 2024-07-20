@@ -15,7 +15,7 @@ const populateProduts = (products) => {
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
             
-            <button id="order-button" onclick="window.location.href='order.html?ProductIdentifier=${product.ProductIdentifier}' aria-label="A link to order th ${product.name}">Order Now</button
+            <button id="order-button" onclick="window.location.href='order.html?ProductIdentifier=${product.ProductIdentifier}'" aria-label="A link to order th ${product.name}">Order Now</button
     
             </div>
             `
