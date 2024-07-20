@@ -25,7 +25,7 @@ const displayCards = (products) => {
             newCard.innerHTML = `
             <h2>Best Seller!</h2>
             <h4>${product.ProductName}</h4>
-            <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
+            <img src="${product.ProductImageURL}" alt="${product.ProductName} image" loading="lazy" height="200" width="">
             <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
@@ -146,7 +146,7 @@ function showHighLowForecast(forecasts) {
 
 
         newIcon.src = 'https://openweathermap.org/img/wn/' + highTemps[i].weather[0].icon + '@2x.png';
-
+        newIcon.setAttribute("alt", "The weather icon for day " + (i + 1));
         newIcon.classList.add('forecast-image');
         newsection.append(newIcon);
         weatherElt.append(newsection);
