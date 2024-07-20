@@ -256,6 +256,8 @@ main {
 .card h2 {
     width: 90%;
     border-bottom: 1px solid var(--text-color);
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
