@@ -14,9 +14,9 @@ const populateProduts = (products) => {
             <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
-            <a href="order.html?ProductIdentifier=${product.ProductIdentifier} aria-label='Link to the Order page'">
-            <button id="order-button">Order Now</button
-            </a>
+            
+            <button id="order-button" onclick="window.location.href='order.html?ProductIdentifier=${product.ProductIdentifier}' >Order Now</button
+    
             </div>
             `
         productsSection.append(newCard);
