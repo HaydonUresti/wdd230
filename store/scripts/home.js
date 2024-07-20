@@ -3,7 +3,6 @@ const path = './data/products.json'
 
 let orders = getNumberOfOrders();
 let orderSpan = document.getElementById("order-count")
-console.log("Setting count to " + orders);
 orderSpan.innerHTML = orders;
 
 function getNumberOfOrders() {

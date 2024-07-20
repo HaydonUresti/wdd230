@@ -47,7 +47,6 @@ function updateOrderCount() {
 }
 
 const populateOrder = (product) => {
-    // console.log(product)
 
     document.getElementById("order-num").innerText = `${getRandomIntInclusive(100, 999)}-${getRandomIntInclusive(79000, 110000)}`;
     document.getElementById("total").innerText = (product.ProductPrice + (product.ProductPrice * .05)).toFixed(2)
@@ -82,7 +81,6 @@ async function getProductData() {
 
     if (response.ok) {
         const data = await response.json();
-        console.log(SKU)
         populateOrder(data.products.find(product => product.ProductIdentifier === SKU));
     }
     else {
