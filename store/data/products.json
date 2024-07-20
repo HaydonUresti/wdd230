@@ -3,7 +3,7 @@
         {
             "ProductIdentifier": "SKU001",
             "ProductName": "Original Box",
-            "ProductDescription": "The classic cardboard box for all your packing needs.",
+            "ProductDescription": "The classic cardboard box for all your packing needs, durable and reliable for any situation.",
             "ProductImageURL": "images/original-box.webp",
             "ProductPrice": 5.99,
             "FeaturedProduct": true
@@ -11,7 +11,7 @@
         {
             "ProductIdentifier": "SKU002",
             "ProductName": "Hard Box",
-            "ProductDescription": "A sturdy safe to protect your valuables.",
+            "ProductDescription": "A sturdy, quality safe to effectively protect your valuables and important documents.",
             "ProductImageURL": "images/hard-box.webp",
             "ProductPrice": 199.99,
             "FeaturedProduct": true
@@ -59,7 +59,7 @@
         {
             "ProductIdentifier": "SKU008",
             "ProductName": "Magic Box",
-            "ProductDescription": "A smartphone.",
+            "ProductDescription": "A sleek smartphone that delivers speed and amazing images.",
             "ProductImageURL": "images/magic-box.webp",
             "ProductPrice": 574.99,
             "FeaturedProduct": false
@@ -75,7 +75,7 @@
         {
             "ProductIdentifier": "SKU010",
             "ProductName": "Snack Box",
-            "ProductDescription": "An assortment of delicious snacks.",
+            "ProductDescription": "An assortment of delicious, perfect for satisfying all your cravings.",
             "ProductImageURL": "images/snack-box.webp",
             "ProductPrice": 19.99,
             "FeaturedProduct": false
