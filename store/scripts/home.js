@@ -3,6 +3,7 @@ const path = './data/products.json'
 
 let orders = getNumberOfOrders();
 let orderSpan = document.getElementById("order-count")
+console.log("Setting count to " + orders);
 orderSpan.innerHTML = orders;
 
 function getNumberOfOrders() {
@@ -13,7 +14,7 @@ function getNumberOfOrders() {
     else {
         orderCount = parseInt(orderCount)
     }
-    localStorage.setItem("site-visits", `${orderCount}`);
+    localStorage.setItem("order-count", `${orderCount}`);
     return orderCount
 }
 
@@ -29,7 +30,6 @@ const displayCards = (products) => {
             <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
-
             <a href="order.html?ProductIdentifier=${product.ProductIdentifier}">
             <button>Order Now!</button>
             </a>
@@ -143,10 +143,9 @@ function showHighLowForecast(forecasts) {
         let newIcon = document.createElement("img");
         // It may not be the most correct to jsut get the icon for the hottest part of the day, but I wanted to do so because
         // this site is for Tatooine.
-        console.log("made it here")
+
 
         newIcon.src = 'https://openweathermap.org/img/wn/' + highTemps[i].weather[0].icon + '@2x.png';
-        console.log("made it here")
 
         newIcon.classList.add('forecast-image');
         newsection.append(newIcon);

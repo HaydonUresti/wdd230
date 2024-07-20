@@ -33,6 +33,19 @@ function getDeliveryDate() {
 
 }
 
+function updateOrderCount() {
+    let orderCount = localStorage.getItem("order-count");
+    if (orderCount == null) {
+        orderCount = 0;
+    }
+    else {
+        orderCount = parseInt(orderCount)
+    }
+    orderCount += 1
+    localStorage.setItem("order-count", `${orderCount}`);
+    console.log("Updated the count to " + orderCount)
+}
+
 const populateOrder = (product) => {
     // console.log(product)
 
@@ -41,6 +54,10 @@ const populateOrder = (product) => {
     document.getElementById("name").innerText = `${params.get("first-name")} ${params.get("last-name")}`;
     document.getElementById("address").innerText = `${params.get("address")} ${params.get("city")}, ${params.get("state")} ${params.get("zip-code")}`;
     document.getElementById("delivery").innerText = getDeliveryDate();
+    document.getElementById("user-phone").innerText = params.get("phone-number");
+    document.getElementById("user-email").innerText = params.get("email");
+    document.getElementById("message").innerText = params.get("description");
+
 
     let newCard = document.createElement("div");
     newCard.innerHTML = `
@@ -57,8 +74,6 @@ const populateOrder = (product) => {
     newCard.classList.add("card")
     newCard.classList.add("product-card")
     getDeliveryDate()
-    // addSKU(product.ProductIdentifier)
-    // populateOrderInfo()
 }
 
 
@@ -76,4 +91,5 @@ async function getProductData() {
 
 }
 
+updateOrderCount()
 getProductData();

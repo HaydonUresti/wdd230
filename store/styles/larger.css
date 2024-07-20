@@ -1,4 +1,4 @@
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1124px) {
 
     /* header */
     #menu-button {
@@ -133,6 +133,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, .5fr);
+        /* margin-bottom: 10.5%; */
     }
 
     .about-us .card {
