@@ -10,7 +10,7 @@ const populateProduts = (products) => {
         newCard.innerHTML = `
         
             <h2>${product.ProductName}</h2>
-            <img src="${product.ProductImageURL}" alt="${product.name} image" loading="lazy" height="200" width="">
+            <img src="${product.ProductImageURL}" alt="Image of the ${product.name}" loading="lazy" height="200" width="">
             <div id="desc-div">
             <p>${product.ProductDescription}</p>
             <p><strong>$${product.ProductPrice}</strong></p>
