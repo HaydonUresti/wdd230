@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JavaScript -->
-    <script src="scripts/feader-footer.js"></script>
+    <script src="scripts/feader-footer.js" defer></script>
     <script src="scripts/products.js" defer></script>
 </head>
 
@@ -51,7 +51,6 @@
 
     </header>
     <main class="products-page">
-        <!-- asfasfsg -->
         <section id="products-section">
 
         </section>
@@ -64,10 +63,12 @@
             <div id="company-contact">
                 <p>email@bbs.com<br>123-456-7890<br>846 Main St. Salt Lake City, UT 89234</p>
             </div>
-            <a id="attribution-link" href="attributions.html">Attributions</a>
+            <div id="attribution-div">
+                <a id="attribution-link" href="attributions.html">Attributions</a>
+            </div>
             <p id="last-modified">Last Modified<br></p>
             <div id="current-year">
-                <p>©<span id="currentYear">2024</span> Haydon Uresti Idaho, USA </p>
+                <p>©<span id="currentYear"></span> Haydon Uresti Idaho, USA </p>
             </div>
             <div id="social-media">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>

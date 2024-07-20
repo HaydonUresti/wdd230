@@ -319,6 +319,18 @@ footer {
 
 #attribution-link {
     color: var(--primary-color);
+    display: block;
+
+    text-align: center;
+}
+
+#attribution-div {
+    /* display: block; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* text-align: center; */
 }
 
 footer hr {
@@ -558,5 +570,3 @@ label input {
 #name-p {
     margin-bottom: 0;
 }
-
-/

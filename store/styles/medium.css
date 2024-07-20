@@ -151,7 +151,7 @@
 
     #attribution-link {
         grid-column: 3;
-        margin-top: 8%;
+        /* margin-top: 8%; */
     }
 
     #company-contact {
@@ -308,22 +308,22 @@
     .order-confirmation {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: .5fr .5fr;
     }
 
     #order-details {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 1/3;
     }
 
     #contact-media {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 2;
     }
 
     #product-card {
         grid-column: 2;
-        grid-row: 1/3;
+        grid-row: 1;
     }
 
     .order-info-box {
