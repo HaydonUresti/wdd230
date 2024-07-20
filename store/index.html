@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <div id="logo">
+        <div id="logo-div">
             <img id="logo" src="images/big-box-store-logo-small.webp" loading="lazy">
         </div>
 
@@ -58,17 +58,17 @@
 
         <div id="call-to-action-section">
 
-            <a href="products.html" target="_blank">
-                <button id="hero-button">Find Your Perfect Box Now!</button>
-            </a>
+            <button id="hero-button" onclick="window.location.href='products.html'">Find Your Perfect Box
+                Now!</button>
 
-            <img id="hero-image" src="images/hero-image.webp" alt="Pile of Boxes" loading="lazy">
+
+            <img id=" hero-image" src="images/hero-image.webp" alt="Pile of Boxes" loading="lazy">
 
         </div>
         <div id="card-div">
-            <section id="featured-products">
+            <div id="featured-products">
 
-            </section>
+            </div>
 
             <div id="combine-div">
                 <section id="weather-current" class="card">
@@ -78,7 +78,7 @@
 
                     <p><strong>Current Temperature:</strong> <span id="tempurature">123</span></p>
                     <p><strong>Current Humidity:</strong> <span id="humidity">12</span>%</p>
-                    </p>
+
                 </section>
                 <div id="forecast">
                     <h2>Salt Lake City Three Day Forecast</h2>
@@ -93,7 +93,7 @@
     <footer>
         <div id="top-footer">
             <div id="footer-img">
-                <img id="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy">
+                <img class="logo" src="images/big-box-store-logo-tiny.webp" loading="lazy" alt="The Big Box Store Logo">
             </div>
             <div id="company-contact">
                 <p>email@bbs.com<br>123-456-7890<br>846 Main St. Salt Lake City, UT 89234</p>

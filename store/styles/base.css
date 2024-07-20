@@ -27,7 +27,7 @@ header {
     grid-template-rows: 1fr 1fr;
 }
 
-#logo {
+.logo {
     max-width: 100%;
 }
 
