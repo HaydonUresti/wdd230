@@ -224,7 +224,7 @@ main {
 
 #hero-button {
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     top: 20%;
     left: 25%;
     font-size: 1.25rem;
