@@ -73,7 +73,7 @@ function displayResults(data) {
     captionDesc.innerHTML = `${data.weather[0].description}`
     weatherInfo.innerHTML = `${Math.round(temp)}&deg;F - ${data.weather[0].main}`;
     weatherIcon.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png')
-    weatherIcon.setAttribute("alt", `${data.weather[0].icon} weather icon`);
+    weatherIcon.setAttribute("alt", data.weather[0].icon + "weather icon");
     humidity.innerHTML = `${data.main.humidity}`;
 }
 
