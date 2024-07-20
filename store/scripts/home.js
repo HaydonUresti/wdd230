@@ -137,10 +137,12 @@ function showHighLowForecast(forecasts) {
     for (let i = 0; i < 3; i++) {
         let date = dates[i].split("-");
         let newsection = document.createElement("section");
+
         newsection.innerHTML = `<div><h3>${date[1]}-${date[2]}-${date[0]}</h3><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;F</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p> <div>`
 
         newsection.classList.add('forecast-data');
         let newIcon = document.createElement("img");
+
         // It may not be the most correct to jsut get the icon for the hottest part of the day, but I wanted to do so because
         // this site is for Tatooine.
 
@@ -148,8 +150,11 @@ function showHighLowForecast(forecasts) {
         newIcon.src = 'https://openweathermap.org/img/wn/' + highTemps[i].weather[0].icon + '@2x.png';
         newIcon.setAttribute("alt", "The weather icon for day " + (i + 1));
         newIcon.classList.add('forecast-image');
+
         newsection.append(newIcon);
         weatherElt.append(newsection);
+        let newLine = document.createElement("hr");
+        weatherElt.append(newLine)
         weatherElt.classList.add('card');
 
     }
